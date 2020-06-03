@@ -1,0 +1,6 @@
+DS3231.c:16:9:bcd2dec	16	static
+DS3231.c:22:9:dec2bcd	16	static
+DS3231.c:29:6:DS3231_GetDateTime	32	static
+DS3231.c:41:5:dayofweek	48	static
+DS3231.c:53:6:DS3231_SetDateTime	40	static
+DS3231.c:67:6:DS3231_Init	16	static
