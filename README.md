@@ -18,7 +18,7 @@
 # 🗺️ Technologies used in project 
  - Based on microcontroller STM32
 - Used CD4511BE as BCD code decoder.
-- Used GPS Ublox NEO-M8 as GPS signal reciver.
+- Used GPS Ublox NEO-M8 as GPS signal receiver.
 - Used DS3212 as RTC clock.
 -  Development necessary libraries based on technical documentation,
 
