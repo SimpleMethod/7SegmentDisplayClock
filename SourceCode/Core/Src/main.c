@@ -521,6 +521,13 @@ void DisplaySecond(int digit) {
 	SprintSecond_2(part2);
 }
 
+void displayData()
+{
+	displayHour(rtc.day);
+	displayMinute(rtc.month);
+	displaySecond(rtc.year-2000);
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -603,8 +610,11 @@ int main(void) {
 					alarmDeactivate = 1;
 				}
 
-			} else {
 			}
+			if(configMode==3)
+			{
+				displayData();
+			}			
 			Timer = HAL_GetTick();
 		}
 
@@ -901,6 +911,18 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN) {
 				if (alarmMinute >= 60) {
 					alarmMinute = 0;
 				}
+			}
+			else
+			{
+				if(configMode==3)
+				{
+					configMode=0;
+				}
+				else
+				{
+					configMode=3;
+				}
+
 			}
 			muttexButton3 = 1;
 		}
