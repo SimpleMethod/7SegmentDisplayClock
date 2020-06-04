@@ -40,4 +40,4 @@
 
 ## 🎥  Video of the presentation:
 
-[https://www.youtube.com/watch?v=30sn_fwWfGY](https://www.youtube.com/watch?v=30sn_fwWfGY)
+[https://youtu.be/eESlLnk6x-c](https://youtu.be/eESlLnk6x-c)
