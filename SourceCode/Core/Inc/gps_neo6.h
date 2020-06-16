@@ -1,14 +1,3 @@
-/*
- * gps_neo6.h
- *
- *  Created on: 6.09.2019
- *      Author: Mateusz Salamon
- *		www.msalamon.pl
- *
- *      Website: https://msalamon.pl/lokalizacja-gps-przy-pomocy-neo6mv2-na-stm32/
- *      GitHub: https://github.com/lamik/GPS_NEO6_STM32_HAL
- *      Contact: mateusz@msalamon.pl
- */
 #ifndef gps_neo6_h
 #define gps_neo6_h
 
