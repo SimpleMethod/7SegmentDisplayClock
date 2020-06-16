@@ -16,9 +16,7 @@
 #define GPS_WORKING_BUFFER_SIZE 128
 typedef struct
 {
-	//
-	// UART stuff
-	//
+
 	UART_HandleTypeDef *neo6_huart;
 	uint8_t UartBuffer[GPS_UART_BUFFER_SIZE];
 	uint8_t UartBufferHead;
@@ -27,9 +25,6 @@ typedef struct
 
 	uint8_t WorkingBuffer[GPS_WORKING_BUFFER_SIZE];
 
-	//
-	// Time and Date
-	//
 	uint8_t Hour;
 	uint8_t Minute;
 	uint8_t Second;
@@ -37,30 +32,6 @@ typedef struct
 	uint8_t Month;
 	uint8_t Year;
 
-	//
-	//	Position
-	//
-	double 	Latitude;
-	char 	LatitudeDirection;
-	double 	Longitude;
-	char 	LongitudeDirection;
-	double 	Altitude;
-
-	//
-	//	Speed
-	//
-	double 	SpeedKnots;
-	double 	SpeedKilometers;
-
-	//
-	//	Satelites parameters
-	//
-	uint8_t SatelitesNumber;
-	uint8_t Quality; 	// 0 - no Fix, 1 - Fix, 2 - Dif. Fix
-	uint8_t FixMode;	// 1 - no Fiz, 2 - 2D, 3 - 3D
-	double 	Dop; 		// Dilution of precision
-	double 	Hdop;		// Dilution of precision for flat coords
-	double 	Vdop;		// Dilution of precision for height
 
 }NEO6_State;
 
